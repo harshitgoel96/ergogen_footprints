@@ -70,7 +70,7 @@ module.exports = {
     (fp_text user %V (at -0.635 0.635 ${p.rot}) (layer B.Fab)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (pad 1 smd rect (at 6.29 -5.08 ${p.rot}) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask))
+    (pad 1 smd rect (at 6.29 -5.08 ${p.rot}) (size 2.55 2.5) (layers B.Cu B.Paste B.Mask) ${p.from.str})
     (pad "" np_thru_hole circle (at 2.54 -5.08 ${p.rot}) (size 3 3) (drill 3) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at -3.81 -2.54 ${p.rot}) (size 3 3) (drill 3) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 0 0 ${p.rot}) (size 6.25 6.25) (drill 3.9878) (layers *.Cu *.Mask))
