@@ -2,6 +2,7 @@ module.exports = {
     params: {
         designator: 'FC',
         side: 'F',
+        GND: {type: 'net', value: 'GND'},
         P1: {type: 'net', value: 'P1'},
         P2: {type: 'net', value: 'P2'},
         P3: {type: 'net', value: 'P3'},
@@ -68,7 +69,7 @@ module.exports = {
       (pad 3 smd rect (at -1.75 -1.85 ${p.rot}) (size 0.3 1.3) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.P3.str})
       (pad 2 smd rect (at -2.25 -1.85 ${p.rot}) (size 0.3 1.3) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.P2.str})
       (pad 1 smd rect (at -2.75 -1.85 ${p.rot}) (size 0.3 1.3) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.P1.str})
-      (pad MP smd rect (at -4.65 1.4 ${p.rot}) (size 1.8 2.2) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask))
-      (pad MP smd rect (at 4.65 1.4 ${p.rot}) (size 1.8 2.2) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask))
+      (pad MP smd rect (at -4.65 1.4 ${p.rot}) (size 1.8 2.2) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.GND.str})
+      (pad MP smd rect (at 4.65 1.4 ${p.rot}) (size 1.8 2.2) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.GND.str})
   )`
 }
