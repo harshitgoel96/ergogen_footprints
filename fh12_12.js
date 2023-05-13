@@ -57,6 +57,7 @@ module.exports = {
       (fp_line (start -6.05 4.9) (end 6.05 4.9) (layer ${p.side}.CrtYd) (width 0.05))
       (fp_line (start 6.05 4.9) (end 6.05 -3) (layer ${p.side}.CrtYd) (width 0.05))
       (fp_line (start 6.05 -3) (end -6.05 -3) (layer ${p.side}.CrtYd) (width 0.05))
+      (fp_circle (center 0 0) (end 22.86 -1.27) (layer Dwgs.User) (width 0.12))
       (pad 12 smd rect (at 2.75 -1.85 ${p.rot}) (size 0.3 1.3) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.P12.str})
       (pad 11 smd rect (at 2.25 -1.85 ${p.rot}) (size 0.3 1.3) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.P11.str})
       (pad 10 smd rect (at 1.75 -1.85 ${p.rot}) (size 0.3 1.3) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.P10.str})
