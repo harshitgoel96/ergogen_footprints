@@ -72,5 +72,8 @@ module.exports = {
       (pad 1 smd rect (at -2.75 -1.85 ${p.rot}) (size 0.3 1.3) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.P1.str})
       (pad MP smd rect (at -4.65 1.4 ${p.rot}) (size 1.8 2.2) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.GND.str})
       (pad MP smd rect (at 4.65 1.4 ${p.rot}) (size 1.8 2.2) (layers ${p.side}.Cu ${p.side}.Paste ${p.side}.Mask) ${p.GND.str})
+      (pad "" np_thru_hole circle (at -15 -7.5 ${p.rot}) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at 15 -7.5 ${p.rot}) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+      (pad "" np_thru_hole circle (at 0 15 ${p.rot}) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )`
 }
