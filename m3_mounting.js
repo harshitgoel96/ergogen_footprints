@@ -19,7 +19,7 @@ module.exports = {
       )
       (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
       (fp_circle (center 0 0) (end 3.45 0) (layer ${p.side}.CrtYd) (width 0.05))
-      (pad 1 np_thru_hole circle (at 0 0 ${p.rot})) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask) ${p.GND.str})
+      (pad 1 np_thru_hole circle (at 0 0 ${p.rot}) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask) ${p.GND.str})
 
   )`
 }
